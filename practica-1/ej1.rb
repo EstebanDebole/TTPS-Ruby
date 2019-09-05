@@ -1,9 +1,11 @@
-"Investigá y probá en un intérprete de Ruby cómo crear objetos de los siguientes tipos básicos usando literales y usando el constructor new (cuando sea posible):
+=begin
+Investigá y probá en un intérprete de Ruby cómo crear objetos de los siguientes tipos básicos usando literales y usando el constructor new (cuando sea posible):
 
 Arreglo (Array)
 Diccionario o hash (Hash)
 String (String)
-Símbolo (Symbol)"
+Símbolo (Symbol)
+=end
 ##ARRAYS
 
 arr = [1, 2, 3, 4, 5, 6] #=> [1,2,3,4,5,6]
