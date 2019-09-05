@@ -5,8 +5,8 @@ con llaves por bloques multilínea con do y end. Por ejemplo:"
 	# => "3.times do\n |i| puts i \nend"
 
 def reemplazar string
-    string.gsub!("{", "do\n")
-    string.gsub!("}", "\nend")	    
+    string.gsub!("{", "do\n") 
+    string.gsub("}", "\nend")	    
 end
 
 # gsub! reemplaza y devuelve en el mismo string que le pasamos. No devuelve otro string.
