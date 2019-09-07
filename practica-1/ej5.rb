@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 =begin
 Escribí una función llamada contar que reciba como parámetro dos string y que retorne
 la cantidad de veces que aparece el segundo string en el primero, sin importar

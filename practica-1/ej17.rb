@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 =begin
 Cada nuevo término en la secuencia de Fibonacci es generado sumando los 2 términos
 anteriores. Los primeros 10 términos son: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55. Considerando los

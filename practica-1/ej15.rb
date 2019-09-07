@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 =begin
 Investigá qué métodos provee Ruby para:
 	Conocer la lista de métodos de una clase. ===> Class.methods

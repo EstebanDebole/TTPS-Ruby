@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 =begin
 Escribí una función que convierta a palabras la hora actual, dividiendo en los siguientes rangos los minutos:
 

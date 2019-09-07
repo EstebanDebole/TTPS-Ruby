@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 =begin 
 Escribí una función llamada rot13 que encripte un string recibido como parámetro
 utilizando el algoritmo ROT13 (https://es.wikipedia.org/wiki/ROT13) . Por ejemplo:

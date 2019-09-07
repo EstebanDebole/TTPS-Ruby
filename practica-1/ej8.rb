@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 #¿Qué hace el siguiente código?
 [:upcase, :downcase, :capitalize, :swapcase].map do |meth| 
 	p "TTPS Ruby".send(meth)

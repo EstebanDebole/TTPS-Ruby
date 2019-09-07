@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 =begin
 Escribí una función que encuentre la suma de todos los números naturales múltiplos de
 3 ó 5 menores que un número tope que reciba como parámetro.

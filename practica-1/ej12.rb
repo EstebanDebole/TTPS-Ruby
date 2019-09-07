@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 =begin 
 Escribí una función más genérica, parecida a la del ejercicio anterior, que reciba como
 parámetro un string y un número n, y que realice una rotación de n lugares de las letras

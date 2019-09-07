@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 =begin
 Dada una cadena cualquiera, y utilizando los métodos que provee la clase String, realizá
 las siguientes operaciones sobre el string:

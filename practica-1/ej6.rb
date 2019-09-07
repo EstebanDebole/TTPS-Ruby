@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 =begin
 Modificá la función anterior para que sólo considere como aparición del segundo string
 cuando se trate de palabras completas. Por ejemplo:

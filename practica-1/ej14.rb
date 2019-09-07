@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 =begin
 Dado un color expresado en notación RGB (https://es.wikipedia.org/wiki/RGB) , debés calcular
 su representación entera y hexadecimal, donde la notación entera se define como red +
