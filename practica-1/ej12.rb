@@ -7,6 +7,7 @@ del string y retorne el resultado. Por ejemplo:
 =end
 
 def rot(string,a_size)
-	string.tr "A-Za-z", "#{(65 + a_size).chr}-ZA-#{(64 + a_size).chr}#{(97 + a_size).chr}-za-#{(96 + a_size).chr}"
+	string.tr "a-zA-Z", "#{(97 + a_size).chr}-za-#{(96 + a_size).chr}#{(65 + a_size).chr}-ZA-#{(64 + a_size).chr}"
 end
-p rot("¡ Bienvenidos a la cursada 2019 de TTPS Opcion Ruby!",13)
+#p rot("¡Bienvenidos a la cursada 2019 de TTPS Opcion Ruby!",13)
+p rot(ARGV[0],ARGV[1].to_i)
