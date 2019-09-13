@@ -1,0 +1,8 @@
+mixins modulo tradicional de ruby => interfaces metodos que responde y implementacion de metodos 
+	tambien usado como namespace 
+modulo no puede instanciarse para eso tengo las clases
+include=metodos de instancia
+extend= metodos de clases
+
+self. para implementar metodos de instancia
+self.class => metodo de clase
