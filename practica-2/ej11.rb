@@ -9,8 +9,31 @@
 =end
 
 module Countable
-	def count_invocations_of(sym)
-		
+	def invocations
+		# ||= devuelve invocations o le asigna y devuelve Hash.new(0)
+		# La primera vez devuelve y asigna Hash.new(0), todas las siguientes veces devuelve la var
+		@invocations ||= Hash.new(0)
+	end
+	module ClassMethods
+		def count_invocations_of(sym)
+			 # Creo una copia del metodo recibido como parametro. Su nombre sera el mismo con "o_" al principio.
+			 # Con esto puedo modificar el metodo original sin perder su funcionamiento.
+			 # El funcionamiento original queda en la copia que empieza con "o_".
+			 alias_method(:"o_#{sym}", sym)
+
+			 # Sobreescribo el original.
+			 define_method "#{sym}" do
+				  # Aumento la cantidad de veces que se llamo el metodo.
+				  # __method__ contiene el nombre del metodo en el que se ejecuta.
+				  invocations[__method__] += 1
+				  
+				  # Ejecuto la funcionalidad original del metodo.
+				  send(:"o_#{__method__}")
+			 end
+		end
+	end
+	def self.included(base)
+		base.extend(ClassMethods)
 	end
 	def invoked?(sym)
 
