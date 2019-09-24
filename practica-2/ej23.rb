@@ -14,29 +14,33 @@ class Image
 	end
 
 	# Distintos filtros de imágenes:
+	def filter(grade)
+		filtered_data=data.lazy.map { |e| e ** grade }
+		Image.new filtered_data
+	end
 
 	def filter_a
-		Image.new data.map { |e| e ** 1.2 }
+		filter 1.2
 	end
 
 	def filter_b
-		Image.new data.map { |e| e ** 1.4 }
+		filter 1.4
 	end
 	
 	def filter_c
-		Image.new data.map { |e| e ** 1.8 }
+		filter 1.8
 	end
 
 	def filter_d
-		Image.new data.map { |e| e ** 2 }
+		filter 2.0
 	end
 	
 	def filter_e
-		Image.new data.map { |e| e ** 2.2 }
+		filter 2.2
 	end
 	
 	def filter_f
-		Image.new data.map { |e| e ** 2.4 }
+		filter 2.4
 	end
 
   #- Fin de filtros

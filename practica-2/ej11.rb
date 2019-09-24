@@ -22,13 +22,13 @@ module Countable
 			 alias_method(:"o_#{sym}", sym)
 
 			 # Sobreescribo el original.
-			 define_method "#{sym}" do
+			 define_method sym do
 				  # Aumento la cantidad de veces que se llamo el metodo.
 				  # __method__ contiene el nombre del metodo en el que se ejecuta.
-				  invocations[__method__] += 1
+				  invocations[sym] += 1
 				  
 				  # Ejecuto la funcionalidad original del metodo.
-				  send(:"o_#{__method__}")
+				  send(:"o_#{sym}")
 			 end
 		end
 	end
@@ -36,9 +36,25 @@ module Countable
 		base.extend(ClassMethods)
 	end
 	def invoked?(sym)
-
+		invocations.keys.include? sym
 	end
 	def invoked(sym)
-
+		invocations[sym]
 	end
 end
+
+class Greeter
+	# Incluyo el Mixin
+	include Countable
+
+	def hi
+	  puts 'Hey!'
+	end
+
+	def bye
+	  puts 'See you!'
+	end
+
+	# Indico que quiero llevar la cuenta de veces que se invoca el método #hi
+	count_invocations_of :hi
+ end
