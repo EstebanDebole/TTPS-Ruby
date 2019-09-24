@@ -196,8 +196,7 @@ los elementos fundamentales del mismo: los métodos, las clases y los módulos, 
     end
     ```
 
-13. Modificá la implementación del ejercicio anterior para que `GenericFactory` sea un módulo que se incluya como
-    _Mixin_ en las subclases que implementaste. ¿Qué modificaciones tuviste que hacer en tus clases?
+13. Modificá la implementación del ejercicio anterior para que `GenericFactory` sea un módulo que se incluya como _Mixin_ en las subclases que implementaste. ¿Qué modificaciones tuviste que hacer en tus clases?
 
 14. Extendé las clases `TrueClass` y `FalseClass` para que ambas respondan al método de instancia `opposite`, el cual en
     cada caso debe retornar el valor opuesto al que recibe la invocación al método. Por ejemplo:

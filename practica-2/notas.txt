@@ -6,3 +6,6 @@ extend= metodos de clases
 
 self. para implementar metodos de instancia
 self.class => metodo de clase
+
+
+Faltan completar Ej 11, 
