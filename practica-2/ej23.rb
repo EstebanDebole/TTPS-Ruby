@@ -53,7 +53,7 @@ class Image
 end
 
 image = Image.new
-image.filter_a.filter_c.filter_e # => Esto no realiza ningún cálculo.
-image.filter_a.filter_c.filter_e.header_bytes # => Esto sí realiza cálculos para obtener la info de la cabecera.
+p image.filter_a.filter_c.filter_e # => Esto no realiza ningún cálculo.
+p image.filter_a.filter_c.filter_e.header_bytes # => Esto sí realiza cálculos para obtener la info de la cabecera.
 
 #Podria llamar en cada filtro a otra funcion (filtro generico) con el argumento concreto ej (filter 1.2) y en el metodo generico hacer uso de un enumerador lazy
