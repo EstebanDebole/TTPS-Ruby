@@ -1,6 +1,6 @@
 21. ¿Qué son los _lazy enumerators_? ¿Qué ventajas les ves con respecto al uso de los enumeradores que no son _lazy_?
 
-	> Tip: Analizalo pensando en conjuntos grandes de datos.
+   > Tip: Analizalo pensando en conjuntos grandes de datos.
 # Un lazy enumemrator solo ejecuta lo que necesita para devolver el resultado.
 # Son enumeradores que calculan el siguiente valor cuando se lo piden.
 

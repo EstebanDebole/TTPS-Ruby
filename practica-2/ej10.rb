@@ -6,16 +6,16 @@ i. #di_tcejbo : Imprime el object_id del receptor en espejo (en orden inverso).
 ii. #ssalc : Imprime el nombre de la clase del receptor en espejo.
 =end
 module Reverso
-	def di_tcejbo
-		self.object_id.to_s.reverse
-	end
-	def ssalc
-		self.class.to_s.reverse
-	end
+   def di_tcejbo
+      self.object_id.to_s.reverse
+   end
+   def ssalc
+      self.class.to_s.reverse
+   end
 end
 
 class Prueba
-	include Reverso
+   include Reverso
 end
 
 prueba = Prueba.new

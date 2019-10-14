@@ -1,62 +1,62 @@
 #!/usr/bin/ruby
 
 class Taller
-	def probar(objeto)
-		objeto.arrancar
-	end
+   def probar(objeto)
+      objeto.arrancar
+   end
 end
 
 class Vehiculo
-	def initialize
-		@llave = false #arranca sin llave
-	end
+   def initialize
+      @llave = false #arranca sin llave
+   end
 
-	def llave
-		@llave = !@llave #on/off switch
-	end
+   def llave
+      @llave = !@llave #on/off switch
+   end
 
-	def arrancar
-		if @llave
-			puts "El vehiculo arranco"
-		else
-			puts "El vehiculo no tiene puesta la llave"
-		end
-	end
+   def arrancar
+      if @llave
+         puts "El vehiculo arranco"
+      else
+         puts "El vehiculo no tiene puesta la llave"
+      end
+   end
 end
 
 class Auto < Vehiculo
-	def initialize
-		@frenoDeMano = true
-		@puntoMuerto = true
-	end
+   def initialize
+      @frenoDeMano = true
+      @puntoMuerto = true
+   end
 
-	def frenoDeMano
-		@frenoDeMano = !@frenoDeMano
-	end
+   def frenoDeMano
+      @frenoDeMano = !@frenoDeMano
+   end
 
-	def puntoMuerto
-		@puntoMuerto = !@puntoMuerto
-	end
+   def puntoMuerto
+      @puntoMuerto = !@puntoMuerto
+   end
 
-	def arrancar
-		return super if !@frenoDeMano && @puntoMuerto
-		puts "El auto tiene puesto el freno de mano o no esta en punto muerto"
-	end
+   def arrancar
+      return super if !@frenoDeMano && @puntoMuerto
+      puts "El auto tiene puesto el freno de mano o no esta en punto muerto"
+   end
 end
 
 class Moto < Vehiculo
-	def initialize
-		@patada = false
-	end
+   def initialize
+      @patada = false
+   end
 
-	def patada
-		@patada = !@patada
-	end
+   def patada
+      @patada = !@patada
+   end
 
-	def arrancar
-		return super if @patada
-		puts "La moto no arranco porque no le diste una patada"
-	end
+   def arrancar
+      return super if @patada
+      puts "La moto no arranco porque no le diste una patada"
+   end
 end
 
 class Lancha < Vehiculo

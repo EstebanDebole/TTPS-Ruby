@@ -2,25 +2,25 @@
 =begin 
 Extendé las clases `TrueClass` y `FalseClass` para que ambas respondan al método de instancia `opposite`, el cual en cada caso debe retornar el valor opuesto al que recibe la invocación al método. Por ejemplo:
 
-	false.opposite
-	# => true
-	true.opposite
-	# => false
-	true.opposite.opposite
-	# => true
+   false.opposite
+   # => true
+   true.opposite
+   # => false
+   true.opposite.opposite
+   # => true
 
 =end
 module Oppositable
-	def opposite
-		!self
-	end
+   def opposite
+      !self
+   end
 end
 
 class TrueClass
-	include Oppositable
+   include Oppositable
 end
 class FalseClass
-	include Oppositable
+   include Oppositable
 end
 
 p true.opposite	#false

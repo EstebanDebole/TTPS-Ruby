@@ -1,7 +1,7 @@
 =begin 
 ¿Qué diferencia hay entre el uso de include y extend a la hora de incorporar un módulo en una clase?
-	i. Si quisieras usar un módulo para agregar métodos de instancia a una clase, ¿qué forma usarías a la hora de incluirlo en la clase?
-	ii. Si en cambio quisieras usar un módulo para agregar métodos de clase, ¿qué forma usarías a la hora de incluir el módulo en la clase?
+   i. Si quisieras usar un módulo para agregar métodos de instancia a una clase, ¿qué forma usarías a la hora de incluirlo en la clase?
+   ii. Si en cambio quisieras usar un módulo para agregar métodos de clase, ¿qué forma usarías a la hora de incluir el módulo en la clase?
 
 # Extend puede ser usado en una clase o en un objeto, agregandole al caller los metodos comunes del modulo. Si lo llama una clase se agregan como metodos de clase. Si lo llama un objeto como metodos de instancia.
 

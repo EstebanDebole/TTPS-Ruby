@@ -5,6 +5,6 @@ Escribí una función que encuentre la suma de todos los números naturales múl
 =end
 
 def suma (max)
-	((1...max).select { |num| num % 3 == 0 or num % 5 == 0}).sum
+   ((1...max).select { |num| num % 3 == 0 or num % 5 == 0}).sum
 end
 p suma(100)

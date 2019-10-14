@@ -7,14 +7,14 @@ Suponé que tenés el siguiente script y se te pide que lo hagas _resiliente_ (t
 # Como primer paso se pide al usuario que indique la cantidad de números que ingresará.
 cantidad = 0
 while cantidad < 15
-	puts '¿Cuál es la cantidad de números que ingresará? Debe ser al menos 15'
-	cantidad = gets.to_i
+   puts '¿Cuál es la cantidad de números que ingresará? Debe ser al menos 15'
+   cantidad = gets.to_i
 end
 
 # Luego se almacenan los números
 numeros = 1.upto(cantidad).map do
-	puts 'Ingrese un número'
-	numero = gets.to_i
+   puts 'Ingrese un número'
+   numero = gets.to_i
 end
 
 # Y finalmente se imprime cada número dividido por su número entero inmediato anterior

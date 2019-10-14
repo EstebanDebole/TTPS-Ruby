@@ -12,7 +12,7 @@ Implementá un método que reciba como parámetros un `Hash` y `Proc`, y que dev
 =end
 
 def procesar_hash(hash)
-	hash.invert.transform_values { |h| yield h }
+    hash.invert.transform_values { |h| yield h }
 end
 
 hash = { 'clave' => 1, :otra_clave => 'valor' }
