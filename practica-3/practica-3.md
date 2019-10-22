@@ -88,8 +88,7 @@ principales clases de excepción, y a su vez introduce algunos ejercicios sobre 
    resultado = numeros.map { |x| x / (x - 1) }
    puts 'El resultado es: %s' % resultado.join(', ')
    ```
-7. Partiendo del script del inciso anterior, implementá una nueva clase de excepción que se utilizará para indicar que
-   la entrada del usuario no es un valor numérico entero válido. ¿De qué clase de la jerarquía de `Exception` heredaría?
+7. Partiendo del script del inciso anterior, implementá una nueva clase de excepción que se utilizará para indicar que la entrada del usuario no es un valor numérico entero válido. ¿De qué clase de la jerarquía de `Exception` heredaría?
 8. Sea el siguiente código:
    ```ruby
    def fun3
@@ -108,7 +107,7 @@ principales clases de excepción, y a su vez introduce algunos ejercicios sobre 
 
    def fun2(x)
      puts "Entrando a fun2"
-     fun3  
+     fun3
      a = 5 / x
      puts "Terminando fun2"
    end
@@ -116,10 +115,10 @@ principales clases de excepción, y a su vez introduce algunos ejercicios sobre 
    def fun1(x)
      puts "Entrando a fun1"
      fun2 x
-   rescue  
+   rescue
      puts "Manejador de excepciones de fun1"
      raise
-   ensure  
+   ensure
      puts "Ejecutando ensure de fun1"
    end
 
@@ -138,19 +137,15 @@ principales clases de excepción, y a su vez introduce algunos ejercicios sobre 
      puts "Salida"
    end
    ```
-   1. Seguí el flujo de ejecución registrando la traza de impresiones que deja el programa, analizando por qué partes
-      del código va pasando y justificando esos pasos.
-   2. ¿Qué pasaría si se permuta, dentro de `fun3`, el manejador de excepciones para `RuntimeError` y el manejador de
-      excepciones genérico (el que tiene el rescue vacío)?
-   3. ¿El uso de `retry` afectaría el funcionamiento del programa si se mueve la línea `x = 0` dentro del segundo
-      `begin` (inmediatamente antes de llamar a `fun1` con `x`)?
+   1. Seguí el flujo de ejecución registrando la traza de impresiones que deja el programa, analizando por qué partes del código va pasando y justificando esos pasos.
+   2. ¿Qué pasaría si se permuta, dentro de `fun3`, el manejador de excepciones para `RuntimeError` y el manejador de excepciones genérico (el que tiene el rescue vacío)?
+   3. ¿El uso de `retry` afectaría el funcionamiento del programa si se mueve la línea `x = 0` dentro del segundo `begin` (inmediatamente antes de llamar a `fun1` con `x`)?
 
 ## Testing
 
 > Nota: Para esta práctica utilizaremos `MiniTest` en cualquiera de sus variantes (`minitest/unit` o `minitest/spec`).
 
-9. ¿En qué consiste la metodología TDD? ¿En qué se diferencia con la forma tradicional de escribir código y luego
-   realizar los tests?
+9. ¿En qué consiste la metodología TDD? ¿En qué se diferencia con la forma tradicional de escribir código y luego realizar los tests?
 10. Dado los siguientes tests, escribí el método correspondiente (el que se invoca en cada uno) para hacer que pasen:
     ```ruby
     require 'minitest/autorun'
