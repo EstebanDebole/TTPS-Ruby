@@ -13,7 +13,7 @@ y si el minuto está entre 56 y 59, debe decir 'casi las' (y la hora siguiente)
 def en_palabras(time = Time.now)
     case time.min
         when 0..10
-            e"Son las #{time.hour} en punto"
+            "Son las #{time.hour} en punto"
         when 11..20
             "Son las #{time.hour} y cuarto"
         when 21..34
