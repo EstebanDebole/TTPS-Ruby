@@ -25,3 +25,12 @@ puts 'El resultado es: %s' % resultado.join(', ')
 
 # posibles excepciones
 # -> Ingresar un valor numerico, ZeroDivision, Cantidad de argumentos pasados por teclado
+
+#  Para el punto 7 deberia crear una subclase de StandardError 
+=begin 
+class InvalidValue < StandardError
+   def initialize msg = "Debe ingresar un número"
+      super
+   end
+end 
+=end
