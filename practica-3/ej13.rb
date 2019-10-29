@@ -87,3 +87,5 @@ end
 # get_code('A') # 1
 # get_code('B') # 2
 # get_code('C') # 3
+
+p expansor('abcde')
