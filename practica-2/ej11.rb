@@ -57,4 +57,4 @@ class Greeter
 
    # Indico que quiero llevar la cuenta de veces que se invoca el método #hi
    count_invocations_of :hi
- end
+end
