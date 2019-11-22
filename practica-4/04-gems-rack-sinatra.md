@@ -84,12 +84,8 @@ En esta práctica veremos ejercicios para comprender el funcionamiento de las ge
      el *splat*
    - `POST /random` presenta un número al azar
    - `POST /random/:lower/:upper` presenta un número al azar entre `:lower` y `:upper` (dos valores numéricos)
-6. Implementá un *middleware* para Sinatra que modifique la respuesta del web server y "tache" cualquier número que
-   aparezca en el *body* de la respuesta, cambiando cada dígito por un caracter `X`. Utilizalo en la aplicación anterior
-   para corroborar su funcionamiento.
-7. Implementá otro *middleware* para Sinatra que agregue una cabecera a la respuesta HTTP, llamada `X-Xs-Count`, cuyo
-   valor sea la cantidad de caracteres `X` que encuentra en el *body* de la respuesta. ¿Cómo debés incluirlo en tu *app*
-   Sinatra para que este *middleware* se ejecute **antes** que el desarrollado en el punto anterior?
+6. Implementá un *middleware* para Sinatra que modifique la respuesta del web server y "tache" cualquier número que aparezca en el *body* de la respuesta, cambiando cada dígito por un caracter `X`. Utilizalo en la aplicación anterior para corroborar su funcionamiento.
+7. Implementá otro *middleware* para Sinatra que agregue una cabecera a la respuesta HTTP, llamada `X-Xs-Count`, cuyo valor sea la cantidad de caracteres `X` que encuentra en el *body* de la respuesta. ¿Cómo debés incluirlo en tu *app* Sinatra para que este *middleware* se ejecute **antes** que el desarrollado en el punto anterior?
 8. Desarrollá una aplicación Sinatra para jugar al ahorcado. La aplicación internamente debe manejar una lista de
    palabras (cada una asociada a algún identificador de tu elección y a información sobre los intentos realizados para
    adivinar esa palabra), donde cada una representa una partida de ahorcado que puede ser jugada una sóla vez por

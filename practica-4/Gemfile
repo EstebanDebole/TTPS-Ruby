@@ -4,3 +4,4 @@ source "https://rubygems.org"
 # gem "rails"
 gem "rack"
 gem 'sinatra', '~> 1.4', '>= 1.4.7'
+gem 'sinatra-advanced-routes', :require => 'sinatra/advanced_routes'
